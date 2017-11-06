@@ -1,0 +1,20 @@
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+int main()
+{
+   //freopen("in.txt","r",stdin);
+    int Case,mp,lp;
+    cin>>Case;
+    for(int i =1;i<=Case;i++)
+    {
+        cin>>mp>>lp;
+        if(mp<=lp)
+           cout<<"Case "<<i<<": "<<19+lp*4<<endl;
+        else
+        {
+            cout<<"Case "<<i<<": "<<19+lp*4+(mp-lp)*2*4<<endl;
+        }
+    }
+    return 0;
+}
