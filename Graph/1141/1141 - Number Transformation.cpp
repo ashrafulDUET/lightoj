@@ -24,21 +24,7 @@ void primeFac(int x)
     if(c>1 && c!=x)adj[x].push_back(c);
 }
 int dist[MAX],re;
-void primefactor( int n){
-    int ind = n;
-    int div = 2;
-    int add = 0 ;
-    while(n > 1){
-        add = 0;
-        while( n % div == 0 ){
-            add = div;
-            n /= div;
-        }
-        div += 1;
-        if( add ) adj[ind].push_back(add);
-    }
-    if( add == ind ) adj[ind].clear();
-}
+
 void bfs(int u, int v)
 {
 
